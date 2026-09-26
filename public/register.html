@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — Expense Tracker</title>
+  <meta name="description" content="Create an account on Expense Tracker Application">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">
+          <i class="fas fa-wallet"></i>
+          <span>ExpenseTracker</span>
+        </div>
+        <p class="auth-subtitle">Create your personal expense tracker account.</p>
+      </div>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            class="form-control" 
+            placeholder="Anushka" 
+            required 
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            class="form-control" 
+            placeholder="anushka@example.com" 
+            required 
+            autocomplete="email"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            class="form-control" 
+            placeholder="At least 6 characters" 
+            required 
+            autocomplete="new-password"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            class="form-control" 
+            placeholder="Re-enter password" 
+            required 
+            autocomplete="new-password"
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;">
+          <i class="fas fa-user-plus"></i> Create Account
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Already have an account? <a href="/login.html">Login here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
